@@ -1,0 +1,31 @@
+[project]
+name = "legal-research-app"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "docling>=2.126.0",
+    "google-genai>=2.22.0",
+    "ollama>=0.6.2",
+    "openai>=3.8.0",
+    "pydantic-settings>=2.15.0",
+    "python-dotenv>=1.2.3",
+    "sentence-transformers>=6.0.1",
+    "streamlit>=1.63.0",
+    "supabase>=2.31.0",
+]
+
+[project.scripts]
+legal-research-app = "legal_research_app:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-mock>=3.15.1",
+    "reportlab>=5.0.1",
+]

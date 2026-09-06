@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local data (documents, indexes, uploads) -- privacy-sensitive, never committed
+data/
+uploads/
+
+# Supabase local dev
+supabase/.branches/
+supabase/.temp/
+
+# OS
+.DS_Store
